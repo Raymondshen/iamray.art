@@ -1,13 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166723601-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-166723601-1");
+    </script>
+
+    <!-- META TAGS -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iamray</title>
+    <meta
+      name="description"
+      content="
+    Raymond Shen is a Product Designer at Netflix Party who graduated from the Academy of Art University with a BFA in Web Design & New Media.
+    "
+    />
+
+    <meta property="og:title" content="iamray.co" />
+    <meta property="og:image" content="http://iamray.co/img/og/og_logo.jpg" />
+    <meta property="og:description" content="Raymond Shen's portfolio." />
+    <meta property="og:url" content="http://iamray.co/index.html" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="iamray.co " />
+    <meta name="twitter:description" content="Raymond Shen's portfolio." />
+    <meta name="twitter:image" content="http://iamray.co/img/og/og_logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- META TAGS -->
+
+    <title>iamray.co - raymond shen</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- FAVICON -->
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/feather.min.js"></script>
   </head>
+
   <body>
-    <h1>Raymond's Website</h1>
-    <p>testing 123</p>
+    <nav class="main-nav rm-pos-fixed">
+      <ul class="main-nav-container">
+        <ul>
+          <li>
+            <a href="index.html"> iamray </a>
+          </li>
+        </ul>
+        <ul class="main-nav-link">
+          <li>
+            <a href="pages/about.html"> about </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/3c4QhSu" target="_blank"> resume </a>
+          </li>
+          <li>
+            <a href="pages/work.html"> work </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <main class="main-container">
+      <div id="sketch-bg"></div>
+
+      <div class="hero-container set-width">
+        <div class="hero-txt">
+          <h1 class="rm-padding-bottom hero-txt-headline">RaymondShen</h1>
+          <p class="hero-txt-bot">
+            Started off as a <i class="hero-streetartist">Street Artist</i>, now
+            a
+            <i
+              >Product Designer
+              <a href="https://www.netflixparty.com/" target="_blank"
+                >@NetflixParty</a
+              ></i
+            >. <br />Based in San Francisco, CA.
+          </p>
+        </div>
+
+        <figure
+          class="hero-img-me hero-img"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-full-page-listening
+          data-tilt-axis="x"
+        >
+          <img src="img/index/raymond.webp" alt="Photo of Raymond Shen" />
+        </figure>
+
+        <figure
+          class="hero-img-streetartist hero-img"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-full-page-listening
+          data-tilt-axis="x"
+        >
+          <img
+            src="img/index/raymond_street.webp"
+            alt="Raymond Shen Painting Love Sculpture for Southern Exposure"
+          />
+        </figure>
+
+        <figure class="hero-img-shape">
+          <img
+            src="img/index/goldshape.svg"
+            alt="Raymond Shen Gold Shape Logo"
+          />
+        </figure>
+
+        <div class="hero-scroll-container">
+          <img class="scroll-pt2" src="img/index/scroll_indicator.svg" alt="" />
+        </div>
+
+        <div class="hero-nav">
+          <a href="https://www.linkedin.com/in/iamrayshen/" target="_blank">
+            <i data-feather="linkedin" class="hero-contact-icon"></i>
+          </a>
+          <a href="https://github.com/Raymondshen" target="_blank">
+            <i data-feather="github" class="hero-contact-icon"></i>
+          </a>
+          <a href="https://www.instagram.com/iamray.co/" target="_blank">
+            <i data-feather="instagram" class="hero-contact-icon"></i>
+          </a>
+          <a href="mailto:raymonds.shenz@gmail.com" target="_blank">
+            <i data-feather="mail" class="hero-contact-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="project" class="project-container set-width">
+        <div class="project-row-top project-wrap">
+          <a class="project-block hover-shadow-light">
+            <div class="img-block">
+              <img
+                src="img/index/netflixparty_cover.png"
+                alt="NetflixParty Logo"
+                class="img-logo"
+              />
+              <p class="img-txt">Netflix Party</p>
+            </div>
+
+            <div class="project-content">
+              <h3>
+                <span class="num-spacing"> current</span>&nbsp; - Product
+                Designer
+              </h3>
+              <h2>
+                <i data-feather="lock" class="project-icon"></i>
+                <!-- Netflix Party -->
+              </h2>
+              <div class="project-img-container" data-tilt>
+                <img
+                  class="project-img"
+                  src="img/index/netflixparty_display.png"
+                  alt="Netflix Party Extension Designed by Raymond Shen"
+                />
+              </div>
+              <p class="project-view-txt">
+                <i data-feather="chevron-right" class="icon"></i>
+                Email me to learn more
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="pages/visualiz.html"
+            class="project-block hover-shadow-light"
+          >
+            <div class="img-block">
+              <img
+                src="img/index/visualiz_cover.png"
+                alt="Visualiz Logo"
+                class="img-logo"
+              />
+              <p class="img-txt">Visualiz</p>
+            </div>
+
+            <div class="project-content">
+              <h3>
+                <span class="num-spacing">2019</span>&nbsp; - Web & UX Research
+              </h3>
+              <h2>Visualiz</h2>
+              <div class="project-img-container" data-tilt>
+                <img
+                  class="project-img"
+                  src="img/index/visualiz_display.png"
+                  alt=""
+                />
+              </div>
+              <p class="project-view-txt">
+                <i data-feather="chevron-right" class="icon"></i>
+                View Case Study
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="project-row-bot project-wrap">
+          <a
+            href="pages/fireflies.html"
+            class="project-block hover-shadow-light"
+          >
+            <div class="img-block">
+              <img
+                src="img/index/fireflies_cover.png"
+                alt="Fireflies.ai Logo"
+                class="img-logo"
+              />
+              <p class="img-txt">Fireflies.ai</p>
+            </div>
+
+            <div class="project-content">
+              <h3>
+                <span class="num-spacing">2018</span>&nbsp; - Graphic & Web
+                Designer
+              </h3>
+              <h2>Fireflies.ai</h2>
+              <div class="project-img-container" data-tilt>
+                <img
+                  class="project-img"
+                  src="img/index/fireflies_display.png"
+                  alt="Fireflies.ai extension design by Raymond Shen"
+                />
+              </div>
+              <p class="project-view-txt">
+                <i data-feather="chevron-right" class="icon"></i>
+                View Case Study
+              </p>
+            </div>
+          </a>
+
+          <a href="pages/aquabee.html" class="project-block hover-shadow-light">
+            <div class="img-block">
+              <img
+                src="img/index/aquabee_cover.png"
+                alt="Aqua Bee Logo"
+                class="img-logo"
+              />
+              <p class="img-txt">Aqua Bee</p>
+            </div>
+
+            <div class="project-content">
+              <h3><span class="num-spacing">2018</span>&nbsp; - Designer</h3>
+              <h2>Aqua Bee</h2>
+              <div
+                class="project-img-container"
+                data-tilt
+                data-tilt-reset="false"
+              >
+                <img
+                  class="project-img"
+                  src="img/index/aquabee_display.png"
+                  alt="Aquabee screen display designed by Raymond Shen"
+                />
+              </div>
+              <p class="project-view-txt">
+                <i data-feather="chevron-right" class="icon"></i>
+                View Case Study
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer-container set-width">
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <p class="footer-txt">Designed & Developed by Raymond Shen</p>
+          </div>
+          <div class="footer-right">
+            <p class="footer-txt">
+              <a class="hover-gold" href="pages/credits.html"
+                >Credits & Sources</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- ==== P5 JS ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/rotation.js"></script>
+    <script src="js/scroll.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
