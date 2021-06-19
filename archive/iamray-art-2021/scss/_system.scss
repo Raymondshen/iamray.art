@@ -1,0 +1,159 @@
+/* Colors */
+:root {
+  --white: #f8f5fa;
+  --black: #101010;
+  --off-white: #f7f7f7;
+  --light-gold: #fbe3b5;
+  --gold: #eaa720;
+  --gold-dark: #da9c1e;
+}
+
+/* Breakpoint */
+$breakpoints: (
+  xs: 320px,
+  sm: 375px,
+  land: 500px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@mixin bp($breaksize) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breaksize) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breaksize)) {
+      @content;
+    }
+  }
+}
+
+/* Grid */
+@mixin g-col($num) {
+  display: grid;
+  grid-template-columns: repeat($num, 1fr);
+}
+
+@mixin grid-start-end($start, $end) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+
+@mixin col-gap($gapamt) {
+  column-gap: $gapamt;
+}
+
+@mixin row-gap($gapamt) {
+  row-gap: $gapamt;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+  &-12 {
+    @extend .grid;
+    @include g-col(12);
+  }
+  &-4 {
+    @extend .grid;
+    @include g-col(4);
+  }
+  &-3 {
+    @extend .grid;
+    @include g-col(3);
+  }
+  &-master {
+    @extend .grid-4;
+    position: relative;
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0px 25px;
+    @include bp(md) {
+      @include g-col(12);
+    }
+  }
+}
+
+/* Flexbox */
+@mixin flex-row() {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Sizing */
+@mixin wh100() {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  outline: none !important;
+  width: 8px;
+  background: var(--white);
+  // Handle
+  &-thumb {
+    background: var(--light-gold);
+    outline: none !important;
+  }
+  // hover {
+  &-thumb:hover {
+    background: var(--gold);
+    cursor: pointer;
+    outline: none !important;
+  }
+}
+
+/* Navigation */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  nav {
+    @include flex-row();
+    align-items: center;
+    height: 70px;
+
+    @include bp(md) {
+      height: 100px;
+    }
+    .nav {
+      &-header {
+        @include grid-start-end(1, 7);
+        width: fit-content;
+        a {
+          &:hover {
+            color: var(--gold);
+          }
+        }
+      }
+      &-links {
+        @include flex-row();
+        @include grid-start-end(7, 13);
+        justify-content: flex-end;
+        ul {
+          @include flex-row();
+          li {
+            padding-left: 10px;
+            a {
+              &:hover {
+                color: var(--gold);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Default Styling */
+body {
+  background: var(--white);
+}
