@@ -4,88 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raymond & Kaselia's Wedding</title>
+    <title>Raymond & Kaselia Wedding</title>
     <link rel="stylesheet" href="css/master.css" />
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
   </head>
   <body>
-    <nav class="nav">
-      <ul class="nav-container">
-        <ul class="nav-logo">
-          <li><img src="img/wedding_logo.svg" alt="" /></li>
-        </ul>
-        <ul class="nav-list">
-          <li><a href="#details" class="cnoto-txt-body">細節</a></li>
-          <li><a href="#" class="txt-body">日程</a></li>
-          <li><a href="#food" class="txt-body">食物</a></li>
-        </ul>
+    <div class="detect-orientation">
+      <p></p>
+    </div>
+
+    <nav class="container-nav">
+      <ul class="nav-brand">
+        <li>
+          <a href=""><img src="img/wedding_logo.svg" alt="" /></a>
+        </li>
+      </ul>
+      <ul class="nav-list">
+        <li><a href="" class="c-txt-body">細節</a></li>
+        <li><a href="" class="c-txt-body">日程</a></li>
+        <li><a href="" class="c-txt-body">食物</a></li>
       </ul>
     </nav>
 
-    <div class="detect-mobile">
-      <p class="cnoto-txt-body">
-        要查看網站，請垂直轉動手機或在手機上查看。謝謝！
-      </p>
-    </div>
     <div class="container-hero">
-      <div class="hero-bg"></div>
-      <div class="hero-title">
-        <p class="cma-txt-lg-title">沈英泽</p>
-        <p class="cma-txt-lg-title">x</p>
-        <p class="cma-txt-lg-title">沈李丽珍</p>
+      <div class="hero-background"></div>
+      <div class="hero-title-cn">
+        <h1 class="c-title-txt">沈英泽</h1>
+        <p class="c-title-txt">x</p>
+        <h1 class="c-title-txt">沈李丽珍</h1>
       </div>
     </div>
-    <div id="details" class="container-location">
-      <h2 class="cnoto-txt-title">🗺️ 地址</h2>
-      <div class="border-line"></div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1623.9349357529593!2d-121.92973212476852!3d37.73354300133261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fedb415ec317b%3A0x73333cc0215bde5a!2s9430%20Fircrest%20Ln%2C%20San%20Ramon%2C%20CA%2094583!5e0!3m2!1sen!2sus!4v1628732936145!5m2!1sen!2sus"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        class="custom-map"
-      ></iframe>
-      <p class="txt-body">9430 Fircrest Ln, San Ramon, CA 94583</p>
-      <h2 class="cnoto-txt-title">📅 时间</h2>
-      <div class="border-line"></div>
-      <p class="cnoto-txt-body rm-padtop">2021 年 9 月 5 日星期日</p>
-      <p class="cnoto-txt-body">开始时间 5:00 PM</p>
-      <p class="cnoto-txt-body">结束时间 10:00 PM</p>
+
+    <div class="container-detail">
+      <div class="detail-box-cn rm-padtop">
+        <div class="calendar-wrap">
+          <div class="calendar-title">
+            <h2 class="c-txt-title">时间</h2>
+          </div>
+          <div class="calendar-ymd">
+            <div class="calendar-holder">
+              <p class="txt-large-title num-letter">21</p>
+              <p class="c-txt-body num-character">年</p>
+            </div>
+            <div class="calendar-line"></div>
+            <div class="calendar-holder">
+              <p class="txt-large-title num-letter">09</p>
+              <p class="c-txt-body num-character">月</p>
+            </div>
+            <div class="calendar-line"></div>
+            <div class="calendar-holder">
+              <p class="txt-large-title num-letter">05</p>
+              <p class="c-txt-body num-character">號</p>
+            </div>
+          </div>
+          <div class="calendar-time">
+            <p class="c-txt-body">婚礼五点开始</p>
+            <p class="c-txt-body"></p>
+          </div>
+        </div>
+      </div>
+      <div class="detail-box-cn">
+        <div class="detail-title">
+          <h2 class="c-txt-title">🗺️</h2>
+          <div class="line"></div>
+          <h2 class="c-txt-title">地址</h2>
+        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.382311799744!2d-121.93180018438159!3d37.73417422226676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fedb40de0bbbf%3A0x23b50f21b2585b8!2s9430%20Fircrest%20Ln%2C%20San%20Ramon%2C%20CA%2094583!5e0!3m2!1sen!2sus!4v1628896586451!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
-    <div id="food" class="container-food">
-      <h2 class="cnoto-txt-title">🍜 食物</h2>
-      <div class="border-line"></div>
-      <h3 class="cnoto-txt-headline" style="padding-top: 0rem">
-        🍹 開放式酒吧和飲品
-      </h3>
-      <p class="cnoto-txt-body">
-        在婚禮期間有一個開放的酒吧。將有軟飲料、葡萄酒、白酒、啤酒和水站。
-      </p>
-      <h3 class="cnoto-txt-headline">🧀 開胃菜</h3>
-      <ul class="food-list">
-        <li class="cnoto-txt-body">一系列新鮮水果切片配蜂蜜酸奶蘸醬</li>
-        <li class="cnoto-txt-body">布里和蘋果菲洛之吻</li>
-        <li class="cnoto-txt-body">布里和蘋果菲洛之吻</li>
-        <li class="cnoto-txt-body">五花肉 BLT Crostini</li>
-        <li class="cnoto-txt-body">通心粉和奶酪 Panko 炸丸子</li>
-        <li class="cnoto-txt-body">各種國產和進口奶酪威化</li>
-      </ul>
-      <h3 class="cnoto-txt-headline">🍽️ 晚餐</h3>
-      <ul class="food-list">
-        <li class="cnoto-txt-body">烤排骨</li>
-        <li class="cnoto-txt-body">
-          Panko Parmesan Crusted Chicken with Sherry Cream
-        </li>
-        <li class="cnoto-txt-body">烤箱烤三文魚配龍蒿黃油醬</li>
-        <li class="cnoto-txt-body">香草烤紅薯</li>
-        <li class="cnoto-txt-body">時令蔬菜</li>
-        <li class="cnoto-txt-body">烤麵包和黃油</li>
-      </ul>
-    </div>
-    <footer></footer>
-    <script src="js/scroll.js"></script>
   </body>
 </html>
