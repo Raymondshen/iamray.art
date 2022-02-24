@@ -1,0 +1,12 @@
+// sass --watch main.scss:../css/main.css --style compressed
+
+/* Default Reset */
+@import "reset";
+
+/* Default Files */
+@import "system";
+@import "typography";
+
+/* Custom Scss */
+@import "custom/homepage";
+@import "custom/nav";

@@ -1,0 +1,26 @@
+header {
+  @include flex-row();
+  justify-content: center;
+  position: relative;
+  #main-nav {
+    @include flex-row();
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0rem;
+    h1 a {
+      color: var(--black);
+    }
+    ul {
+      @include flex-row();
+      color: var(--black);
+      li {
+        margin-left: 1em;
+        a {
+          &:hover {
+            color: var(--gold);
+          }
+        }
+      }
+    }
+  }
+}
