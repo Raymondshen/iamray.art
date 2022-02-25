@@ -1,156 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags Starts -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iamray.art - raymond shen</title>
-    <link rel="stylesheet" href="css/master.css" />
+    <meta
+      name="description"
+      content="Raymond Shen's Designer portfolio currently working at Teleparty as a Designer"
+    />
+    <meta property="og:title" content="iamray.art" />
+    <meta property="og:image" content="http://iamray.art/img/og/og_logo.jpg" />
+    <meta property="og:description" content="Raymond Shen's portfolio." />
+    <meta property="og:url" content="http://iamray.art/index.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="iamray.art " />
+    <meta name="twitter:description" content="Raymond Shen's portfolio." />
+    <meta name="twitter:image" content="http://iamray.art/img/og/og_logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Meta Tags Ends -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-M6Q360SE76"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <!-- Title Starts -->
+    <title>iamray.art - Raymond Shen</title>
+    <!-- Title Ends -->
 
-      gtag("config", "G-M6Q360SE76");
-    </script>
-
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Link Tags Starts -->
+    <link rel="canonical" href="https://iamray.art" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Tags Ends -->
   </head>
   <body>
-    <header>
-      <nav class="grid-master">
-        <div class="nav-header">
-          <a href="#" class="txt-body-m">Iamray</a>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#" class="txt-body-m">about</a></li>
-            <li><a href="#" class="txt-body-m">resume</a></li>
-            <li><a href="#" class="txt-body-m">work</a></li>
-          </ul>
-        </div>
+    <header class="setWidthProp">
+      <nav id="main-nav">
+        <h1 class="txt-body-med"><a href="index.html">iamray</a></h1>
+        <ul class="txt-body-med">
+          <li><a href="#">about</a></li>
+          <li><a href="https://bit.ly/3c4QhSu" target="_blank">resume</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="pages/seo.html">seo</a></li>
+        </ul>
       </nav>
     </header>
-
-    <div class="print-bg">
-      <div class="print-word">
-        <h1 class="txt-display">Raymond Shen Raymond Shen</h1>
-        <h1 class="txt-display">Shen Raymond Shen Raymond</h1>
-        <h1 class="txt-display">Raymond Shen Raymond Shen</h1>
-        <h1 class="txt-display">Shen Raymond Shen Raymond</h1>
-        <h1 class="txt-display">Raymond Shen Raymond Shen</h1>
-        <h1 class="txt-display">Shen Raymond Shen Raymond</h1>
-      </div>
-    </div>
-
-    <div id="container-intro" class="grid-master">
-      <div class="intro-content grid-12">
-        <h1 class="txt-display">Raymond Shen</h1>
-        <p class="txt-body">
-          Designer<a href="https://www.netflixparty.com/" target="_blank"
-            >@Teleparty</a
-          >based in San Francisco CA
-        </p>
-      </div>
-
-      <div class="intro-bg">
-        <img src="img/index/raymond.jpg" alt="A picture of Raymond Shen" />
-      </div>
-      <div class="intro-contact">
-        <p class="txt-body">Scroll to view work</p>
-        <ul>
+    <main class="setWidthProp">
+      <section class="homepage-intro mkGrid-5Col">
+        <div class="homepage-intro-content">
+          <h2 class="txt-display">Raymond Shen</h2>
+          <p class="txt-title-bd">
+            Started off as a Street Artist, <br />
+            now a Designer
+            <a href="https://www.teleparty.com/" target="_blank">@Teleparty</a>
+          </p>
+          <p class="txt-caption-med">Based in San Francisco, CA</p>
+        </div>
+        <div class="homepage-intro-image">
+          <img
+            src="img/index/iamray_r.svg"
+            alt="Graffiti Letter R designed by Raymond Shen"
+          />
+        </div>
+      </section>
+      <section class="homepage-work">
+        <h2 class="txt-title-bd">Work</h2>
+        <div class="project-row mkGrid-3Col">
+          <a href="#" class="project-item" id="teleparty">
+            <div class="project-image">
+              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
+            </div>
+          </a>
+          <a class="project-item" id="hireclub">
+            <div class="project-image">
+              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
+            </div>
+          </a>
+          <a href="#" class="project-item" id="fireflies">
+            <div class="project-image">
+              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="setWidthProp homepage-footer">
+      <nav>
+        <ul class="txt-body-reg">
           <li>
-            <a href=""><i data-feather="linkedin" class="social-icon"></i></a>
+            Designed & Developed by
+            <a href="mailto:raymonds.shenz@gmail.artm">Raymond Shen</a>
           </li>
-          <li>
-            <a href=""><i data-feather="github" class="social-icon"></i></a>
-          </li>
-          <li>
-            <a href=""><i data-feather="instagram" class="social-icon"></i></a>
-          </li>
-          <li>
-            <a href=""><i data-feather="mail" class="social-icon"></i></a>
-          </li>
+          <li><a href="#">Credit & Sources</a></li>
         </ul>
-      </div>
-    </div>
-
-    <div id="container-project" class="grid-master project">
-      <p class="txt-hero">Featured Work.</p>
-      <!-- Row 1 -->
-      <div class="project-row">
-        <div class="project-1">
-          <p class="txt-body project-img-num">01</p>
-          <a href="#" class="project-img">
-            <img src="img/index/netflixparty_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-2">
-          <p class="txt-body project-img-num">02</p>
-          <a href="#" class="project-img">
-            <img src="img/index/visualiz_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-3">
-          <p class="txt-body project-img-num">03</p>
-          <a href="#" class="project-img">
-            <img src="img/index/fireflies_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-4">
-          <p class="txt-body project-img-num">04</p>
-          <a href="#" class="project-img">
-            <img src="img/index/aquabee_cover.png" alt="" />
-          </a>
-        </div>
-      </div>
-      <p class="txt-hero">Other Work.</p>
-      <div class="project-row">
-        <div class="project-5">
-          <p class="txt-body project-img-num">05</p>
-          <a href="#" class="project-img">
-            <img src="img/index/netflixparty_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-6">
-          <p class="txt-body project-img-num">06</p>
-          <a href="#" class="project-img">
-            <img src="img/index/visualiz_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-7">
-          <a href="#" class="project-img">
-            <p class="txt-body project-img-num">07</p>
-            <img src="img/index/visualiz_cover.png" alt="" />
-          </a>
-        </div>
-        <div class="project-8">
-          <a href="#" class="project-img">
-            <p class="txt-body project-img-num">08</p>
-            <img src="img/index/visualiz_cover.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-footer grid-master footer">
-      <p class="txt-caption">
-        Designed by Raymond Shen <br />
-        <a href="" class="txt-caption">Credits & Sources</a>
-      </p>
-    </div>
-
-    <!-- Scripts -->
-    <script>
-      feather.replace();
-    </script>
+      </nav>
+    </footer>
   </body>
 </html>
