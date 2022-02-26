@@ -28,6 +28,10 @@
     <link rel="canonical" href="https://iamray.art" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- Link Tags Ends -->
+
+    <!-- External Links Start -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- External Links Ends-->
   </head>
   <body>
     <header class="setWidthProp">
@@ -42,7 +46,7 @@
       </nav>
     </header>
     <main class="setWidthProp">
-      <section class="homepage-intro mkGrid-5Col">
+      <section class="homepage-intro mkGrid g-5col">
         <div class="homepage-intro-content">
           <h2 class="txt-display">Raymond Shen</h2>
           <p class="txt-title-bd">
@@ -51,6 +55,30 @@
             <a href="https://www.teleparty.com/" target="_blank">@Teleparty</a>
           </p>
           <p class="txt-caption-med">Based in San Francisco, CA</p>
+          <ul class="homepage-intro-contact">
+            <li class="intro-contact-item">
+              <a href="https://www.linkedin.com/in/iamrayshen/" target="_blank"
+                ><i data-feather="linkedin"></i
+              ></a>
+            </li>
+            <li class="intro-contact-item">
+              <a href="https://github.com/Raymondshen" target="_blank"
+                ><i data-feather="github"></i
+              ></a>
+            </li>
+            <li class="intro-contact-item">
+              <a
+                href="https://www.instagram.com/iamray.co/?hl=en"
+                target="_blank"
+                ><i data-feather="instagram"></i
+              ></a>
+            </li>
+            <li class="intro-contact-item">
+              <a href="mailto:raymonds.shenz@gmail.com" target="_blank"
+                ><i data-feather="mail"></i
+              ></a>
+            </li>
+          </ul>
         </div>
         <div class="homepage-intro-image">
           <img
@@ -60,23 +88,61 @@
         </div>
       </section>
       <section class="homepage-work">
-        <h2 class="txt-title-bd">Work</h2>
-        <div class="project-row mkGrid-3Col">
-          <a href="#" class="project-item" id="teleparty">
-            <div class="project-image">
-              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
-            </div>
-          </a>
-          <a class="project-item" id="hireclub">
-            <div class="project-image">
-              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
-            </div>
-          </a>
-          <a href="#" class="project-item" id="fireflies">
-            <div class="project-image">
-              <img src="img/index/teleparty_logo.svg" alt="Teleparty Logo" />
-            </div>
-          </a>
+        <h2 class="txt-title-bd">Case Studies.</h2>
+        <div class="project-container">
+          <div class="project-row mkGrid g-2col">
+            <a href="#" class="project-item" id="teleparty">
+              <div class="project-image-bg" id="teleparty-bg">
+                <div class="project-image-container">
+                  <img
+                    src="img/index/teleparty_logo.svg"
+                    alt="Teleparty Logo Designed by Raymond Shen"
+                  />
+                </div>
+                <div class="project-description">
+                  <p class="txt-body-reg">Teleparty</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="project-item" id="hireclub">
+              <div class="project-image-bg" id="hireclub-bg">
+                <div class="project-image-container">
+                  <img
+                    src="img/index/hireclub_logo.svg"
+                    alt="HireClub Logo, a company that helps people improve their career & lives"
+                  />
+                </div>
+                <div class="project-description">
+                  <p class="txt-body-reg">HireClub</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project-row mkGrid g-2col">
+            <a href="#" class="project-item" id="fireflies">
+              <div class="project-image-bg" id="fireflies-bg">
+                <div class="project-image-container">
+                  <img
+                    src="img/index/hireclub_logo.svg"
+                    alt="Teleparty Logo Designed By Raymond Shen"
+                  />
+                </div>
+                <div class="project-description">
+                  <p class="txt-body-reg">Fireflies.ai</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="project-item" id="aquabee">
+              <div class="project-image-bg" id="aquabee-bg">
+                <div class="project-image-container">
+                  <img src="img/index/teleparty_logo.svg" alt="" />
+                </div>
+                <div class="project-description">
+                  <p class="txt-body-reg">Aqua Bee</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -85,11 +151,17 @@
         <ul class="txt-body-reg">
           <li>
             Designed & Developed by
-            <a href="mailto:raymonds.shenz@gmail.artm">Raymond Shen</a>
+            <a href="mailto:raymonds.shenz@gmail.com">Raymond Shen</a>
           </li>
           <li><a href="#">Credit & Sources</a></li>
         </ul>
       </nav>
     </footer>
+
+    <!-- Scripts Start -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- Scripts End -->
   </body>
 </html>
