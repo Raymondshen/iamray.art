@@ -30,6 +30,7 @@
     <!-- Link Tags Ends -->
 
     <!-- External Links Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <!-- External Links Ends-->
   </head>
@@ -38,10 +39,16 @@
       <nav id="main-nav">
         <h1 class="txt-body-md"><a href="index.html">iamray</a></h1>
         <ul class="txt-body-md">
-          <li><a href="#">work</a></li>
           <li><a href="#">about</a></li>
+          <li><a href="#">work</a></li>
           <li><a href="https://bit.ly/3shF3F0" target="_blank">resume</a></li>
-          <li><a href="pages/seo.html">seo</a></li>
+          <li>
+            <a
+              href="https://hills.ccsf.edu/~rshen4/cnit132/pages/cnit132/miniproject1.html"
+              target="_blank"
+              >CCSF</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -84,10 +91,7 @@
               ></a>
             </li>
           </ul>
-          <a
-            class="homepage-intro-resume"
-            href="https://bit.ly/3shF3F0"
-            target="_blank"
+          <a class="homepage-btn" href="https://bit.ly/3shF3F0" target="_blank"
             ><button class="txt-body-md">📋 Resumé</button></a
           >
         </div>
@@ -101,21 +105,59 @@
       <div class="homepage-about">
         <h2 class="txt-title-bd">&centerdot; About &centerdot;</h2>
         <div class="about-container mkGrid g-4col">
-          <p class="txt-display" id="about-title">
-            <span class="txt-highlight-low">Design.</span
-            ><span class="txt-highlight-low">Code.</span
-            ><span class="txt-highlight-low">Play.</span>
-          </p>
-          <p class="txt-body-md" id="about-content">
-            I am currently a Product Designer @Netflix Party & Designer
-            @HireClub. In the past recent years, I also worked at Fireflies.ai,
-            Marigold Health, and TheNewCrowd. I combine user research,
-            wireframing, prototyping, psychology, & development to transform
-            complex problems into delightful & engaging solutions. With studies
-            in Web Design & New Media, I understand the constraints for both
-            development on the web and can adapt and design solutions around
-            them effectively.
-          </p>
+          <div class="about-intro-content">
+            <p class="txt-display" id="about-title">
+              <span class="txt-highlight-low" id="about-design">Design.</span
+              ><span class="txt-highlight-low" id="about-code">Code.</span
+              ><span class="txt-highlight-low" id="about-play"> Play.</span>
+            </p>
+            <p class="txt-body-md" id="about-description">
+              I am currently a Product Designer @Netflix Party & Designer
+              @HireClub. In the past recent years, I also worked at
+              Fireflies.ai, Marigold Health, and TheNewCrowd. I combine user
+              research, wireframing, prototyping, psychology, & development to
+              transform complex problems into delightful & engaging solutions.
+              With studies in Web Design & New Media, I understand the
+              constraints for both development on the web and can adapt and
+              design solutions around them effectively.
+            </p>
+            <a
+              class="homepage-btn"
+              href="https://bit.ly/3shF3F0"
+              target="_blank"
+              ><button class="txt-body-md">📓 About me</button></a
+            >
+          </div>
+          <div class="about-intro-img-container">
+            <img
+              class="about-intro-img"
+              id="about-intro-img-default"
+              src="img/index/raymond_sculpture_southernexposure.jpg"
+              alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
+              title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
+            />
+            <img
+              class="about-intro-img img-switch-fade"
+              id="about-intro-img-design"
+              src="img/index/aquabee_design_by_raymondshen.jpg"
+              alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
+              title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
+            />
+            <img
+              class="about-intro-img img-switch-fade"
+              id="about-intro-img-code"
+              src="img/index/raymond_coding.JPG"
+              alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
+              title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
+            />
+            <img
+              class="about-intro-img img-switch-fade"
+              id="about-intro-img-play"
+              src="img/index/wnm_firefly_project.jpg"
+              alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
+              title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
+            />
+          </div>
         </div>
       </div>
       <section class="homepage-work">
@@ -201,6 +243,8 @@
     <script>
       feather.replace();
     </script>
+
+    <script src="js/main.js"></script>
     <!-- Scripts End -->
   </body>
 </html>
