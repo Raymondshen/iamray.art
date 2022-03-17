@@ -35,10 +35,11 @@
     <!-- External Links Ends-->
   </head>
   <body>
+    <!-- Start Top Navigation -->
     <header class="setWidthProp">
       <nav id="main-nav">
-        <h1 class="txt-body-md"><a href="index.html">iamray</a></h1>
-        <ul class="txt-body-md">
+        <h1 class="txt__body--md"><a href="index.html">iamray</a></h1>
+        <ul class="txt__body--md">
           <li><a href="#">about</a></li>
           <li><a href="#">work</a></li>
           <li><a href="https://bit.ly/3shF3F0" target="_blank">resume</a></li>
@@ -52,69 +53,86 @@
         </ul>
       </nav>
     </header>
-    <main class="setWidthProp">
+    <!-- End Top Navigation -->
+
+    <!-- Start Main Body Content -->
+    <main id="homepage-main" class="setWidthProp grid">
       <!-- Start Intro Section -->
-      <section class="homepage-intro mkGrid g-5col">
-        <div class="homepage-intro-content">
-          <h2 class="txt-display">
-            <span class="homepage-intro-emoji">👋</span> Hi, I'm Raymond!
-            <br />
-            Designer at
-            <a href="https://www.teleparty.com/" target="_blank">Teleparty.</a>
-          </h2>
-          <p class="txt-body-md">
-            Based in San Francisco, CA
-            <br />
-            With a passion in Design, Coding, and Graffiti
-          </p>
-          <ul class="homepage-intro-contact">
-            <li class="intro-contact-item">
-              <a href="https://www.linkedin.com/in/iamrayshen/" target="_blank"
-                ><i data-feather="linkedin"></i
-              ></a>
-            </li>
-            <li class="intro-contact-item">
-              <a href="https://github.com/Raymondshen" target="_blank"
-                ><i data-feather="github"></i
-              ></a>
-            </li>
-            <li class="intro-contact-item">
-              <a
-                href="https://www.instagram.com/iamray.co/?hl=en"
-                target="_blank"
-                ><i data-feather="instagram"></i
-              ></a>
-            </li>
-            <li class="intro-contact-item">
-              <a href="mailto:raymonds.shenz@gmail.com" target="_blank"
-                ><i data-feather="mail"></i
-              ></a>
-            </li>
-          </ul>
-          <a class="homepage-btn" href="https://bit.ly/3shF3F0" target="_blank"
-            ><button class="txt-body-md">📋 Resumé</button></a
-          >
-        </div>
-        <div class="homepage-intro-image">
-          <img
-            src="img/index/iamray_r.svg"
-            alt="Graffiti Letter R designed by Raymond Shen"
-          />
+      <section id="homepage-intro">
+        <div class="homepage-container grid__col-5">
+          <div class="homepage-intro-content">
+            <h2 class="txt__display">
+              <span class="homepage-intro-emoji">👋</span> Hi, I'm Raymond!
+              <br />
+              Designer at
+              <a href="https://www.teleparty.com/" target="_blank"
+                >Teleparty.</a
+              >
+            </h2>
+            <p class="txt__body--md">
+              Based in San Francisco, CA
+              <br />
+              With a passion in Design, Coding, and Graffiti
+            </p>
+            <ul class="homepage-intro-contact">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/iamrayshen/"
+                  target="_blank"
+                  ><i data-feather="linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/Raymondshen" target="_blank"
+                  ><i data-feather="github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/iamray.co/?hl=en"
+                  target="_blank"
+                  ><i data-feather="instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:raymonds.shenz@gmail.com" target="_blank"
+                  ><i data-feather="mail"></i
+                ></a>
+              </li>
+            </ul>
+            <a
+              class="homepage--btn"
+              href="https://bit.ly/3shF3F0"
+              target="_blank"
+              ><button class="txt__body--md">📋 Resumé</button></a
+            >
+          </div>
+          <div class="homepage-intro-img">
+            <img
+              src="img/index/iamray_r.svg"
+              alt="Graffiti Letter R designed by Raymond Shen"
+            />
+          </div>
         </div>
       </section>
       <!-- End About Section -->
 
       <!-- Start About Section -->
-      <section class="homepage-about">
-        <h2 class="txt-title-bd">&centerdot; About &centerdot;</h2>
-        <div class="about-container mkGrid g-4col">
-          <div class="about-intro-content">
-            <p class="txt-display" id="about-title">
-              <span class="txt-highlight-low" id="about-design">Design.</span
-              ><span class="txt-highlight-low" id="about-code">Code.</span
-              ><span class="txt-highlight-low" id="about-play"> Play.</span>
+      <section id="homepage-about">
+        <div class="homepage-header">
+          <h2 class="txt__title--bd">&centerdot; About &centerdot;</h2>
+        </div>
+
+        <div
+          class="homepage-container homepage-about-container grid__col-4-gap-6"
+        >
+          <div class="homepage-about-content">
+            <p class="txt__display" id="about-title">
+              <span class="txt__highlight--low" id="about-design">Design.</span
+              ><span class="txt__highlight--low" id="about-code">Code.</span
+              ><span class="txt__highlight--low" id="about-play"> Play.</span>
             </p>
-            <p class="txt-body-md" id="about-description">
+            <p class="txt__body--md" id="about-description">
               I am currently a Product Designer @Netflix Party & Designer
               @HireClub. In the past recent years, I also worked at
               Fireflies.ai, Marigold Health, and TheNewCrowd. I combine user
@@ -125,36 +143,36 @@
               design solutions around them effectively.
             </p>
             <a
-              class="homepage-btn"
+              class="homepage--btn"
               href="https://bit.ly/3shF3F0"
               target="_blank"
-              ><button class="txt-body-md">📓 About me</button></a
+              ><button class="txt__body--md">📓 About me</button></a
             >
           </div>
-          <div class="about-intro-img-container">
+          <div class="homepage-about-img">
             <img
-              class="about-intro-img show-img-mobile"
+              class="show-img-mobile"
               id="about-intro-img-default"
               src="img/index/raymond_sculpture_southernexposure.jpg"
               alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
               title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
             />
             <img
-              class="about-intro-img img-switch-fade"
+              class="img__fade--zero"
               id="about-intro-img-design"
               src="img/index/aquabee_design_by_raymondshen.jpg"
               alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
               title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
             />
             <img
-              class="about-intro-img img-switch-fade"
+              class="img__fade--zero"
               id="about-intro-img-code"
               src="img/index/raymond_coding.JPG"
               alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
               title="2015 Southern Exposure Gallery Sculpture by Raymond Shen"
             />
             <img
-              class="about-intro-img img-switch-fade"
+              class="img__fade--zero"
               id="about-intro-img-play"
               src="img/index/wnm_firefly_project.jpg"
               alt="Raymond Shen Graffiti Sclupture 'love' spray painting"
@@ -166,58 +184,61 @@
       <!-- End About Section -->
 
       <!-- Start Work Section -->
-      <section class="homepage-work">
-        <h2 class="txt-title-bd">&centerdot; Work &centerdot;</h2>
-        <div class="project-container">
-          <div class="project-row mkGrid g-2col">
-            <a href="#" class="project-item" id="teleparty">
+      <section id="homepage-work">
+        <div class="homepage-header">
+          <h2 class="txt__title--bd">&centerdot; Work &centerdot;</h2>
+        </div>
+
+        <div class="homepage-container">
+          <div class="homepage-work-container grid__col-2-gap-2">
+            <a href="#" id="teleparty">
               <div class="project-container" id="teleparty-bg">
-                <div class="project-image-container">
+                <div class="project-image">
                   <img
                     src="img/index/teleparty_logo.svg"
                     alt="Teleparty Logo Designed by Raymond Shen"
                   />
                 </div>
                 <div class="project-description">
-                  <p class="txt-body-rg">Teleparty - Designer</p>
+                  <p class="txt__body--rg">Teleparty - Designer</p>
                 </div>
               </div>
             </a>
-            <a href="#" class="project-item" id="hireclub">
+            <a href="#" id="hireclub">
               <div class="project-container" id="hireclub-bg">
-                <div class="project-image-container">
+                <div class="project-image">
                   <img
                     src="img/index/hireclub_logo.svg"
                     alt="HireClub Logo, a company that helps people improve their career & lives"
                   />
                 </div>
                 <div class="project-description">
-                  <p class="txt-body-rg">HireClub - Designer</p>
+                  <p class="txt__body--rg">HireClub - Designer</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="project-row mkGrid g-2col">
-            <a href="#" class="project-item" id="fireflies">
+          <div class="homepage-work-container grid__col-2-gap-2">
+            <a href="#" id="fireflies">
               <div class="project-container" id="fireflies-bg">
-                <div class="project-image-container">
+                <div class="project-image">
                   <img
                     src="img/index/fireflies_logo.svg"
                     alt="Teleparty Logo Designed By Raymond Shen"
                   />
                 </div>
                 <div class="project-description">
-                  <p class="txt-body-rg">Fireflies.ai - Designer</p>
+                  <p class="txt__body--rg">Fireflies.ai - Designer</p>
                 </div>
               </div>
             </a>
             <a href="#" class="project-item" id="aquabee">
               <div class="project-container" id="aquabee-bg">
-                <div class="project-image-container">
+                <div class="project-image">
                   <img src="img/index/teleparty_logo.svg" alt="" />
                 </div>
                 <div class="project-description">
-                  <p class="txt-body-rg">Aqua Bee</p>
+                  <p class="txt__body--rg">Aqua Bee</p>
                 </div>
               </div>
             </a>
@@ -226,10 +247,13 @@
       </section>
       <!-- End Work Section -->
     </main>
+    <!-- End Main Body Content -->
+
+    <!-- Start Footer -->
     <footer class="setWidthProp">
-      <div class="footer-container mkGrid g-3col">
+      <div class="footer-container grid__col-3">
         <div class="footer-left">
-          <p class="txt-body-rg">
+          <p class="txt__body--rg">
             Made with 🖤 by
             <a href="mailto:raymonds.shenz@gmail.com">Raymond Shen</a>
           </p>
@@ -241,10 +265,11 @@
           />
         </div>
         <div class="footer-right">
-          <a class="txt-body-rg" href="#">📝 Credit & Sources</a>
+          <a class="txt__body--rg" href="#">📝 Credit & Sources</a>
         </div>
       </div>
     </footer>
+    <!-- End Footer -->
 
     <!-- Scripts Start -->
     <script>

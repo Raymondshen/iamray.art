@@ -2,12 +2,12 @@
 function displayImg(hovTag, imgTag, imgOg) {
   $(hovTag).hover(
     function () {
-      $(imgTag).removeClass("img-switch-fade");
-      $(imgOg).addClass("img-switch-fade");
+      $(imgTag).removeClass("img__fade--zero");
+      $(imgOg).addClass("img__fade--zero");
     },
     function () {
-      $(imgOg).removeClass("img-switch-fade");
-      $(imgTag).addClass("img-switch-fade");
+      $(imgOg).removeClass("img__fade--zero");
+      $(imgTag).addClass("img__fade--zero");
     }
   );
 }
