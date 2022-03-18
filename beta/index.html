@@ -36,7 +36,7 @@
   </head>
   <body>
     <!-- Start Top Navigation -->
-    <header class="setWidthProp">
+    <header class="grid__main">
       <nav id="main-nav">
         <h1 class="txt__body--md"><a href="index.html">iamray</a></h1>
         <ul class="txt__body--md">
@@ -56,12 +56,12 @@
     <!-- End Top Navigation -->
 
     <!-- Start Main Body Content -->
-    <main id="homepage-main" class="setWidthProp grid">
+    <main id="homepage-main" class="grid__main">
       <!-- Start Intro Section -->
-      <section id="homepage-intro">
+      <section id="homepage-intro" class="grid__inner">
         <div class="homepage-container grid__col-5">
           <div class="homepage-intro-content">
-            <h2 class="txt__display">
+            <h2 class="txt__title--bd">
               <span class="homepage-intro-emoji">👋</span> Hi, I'm Raymond!
               <br />
               Designer at
@@ -104,30 +104,30 @@
               class="homepage-btn"
               href="https://bit.ly/3shF3F0"
               target="_blank"
-              ><button class="txt__body--md">📋 Resumé</button></a
+              ><div class="txt__body--md homepage-btn-inner">📋 Resumé</div></a
             >
           </div>
           <div class="homepage-intro-img">
             <img
-              src="img/index/iamray_r.svg"
+              src="img/index/raymond_shen_graffiti_r.svg"
               alt="Graffiti Letter R designed by Raymond Shen"
             />
           </div>
         </div>
       </section>
+
       <!-- End About Section -->
 
       <!-- Start About Section -->
-      <section id="homepage-about">
-        <div class="homepage-header">
-          <h2 class="txt__title--bd">&centerdot; About &centerdot;</h2>
-        </div>
-
-        <div
+      <div class="homepage-about-header">
+        <h2 class="txt__display">About</h2>
+      </div>
+      <section id="homepage-about" class="grid__inner">
+        <divd
           class="homepage-container homepage-about-container grid__col-4-gap-6"
         >
           <div class="homepage-about-content">
-            <p class="txt__display" id="about-title">
+            <p class="txt__title--bd" id="about-title">
               <span class="txt__highlight--low" id="about-design">Design.</span
               ><span class="txt__highlight--low" id="about-code">Code.</span
               ><span class="txt__highlight--low" id="about-play"> Play.</span>
@@ -146,7 +146,9 @@
               class="homepage-btn"
               href="https://bit.ly/3shF3F0"
               target="_blank"
-              ><button class="txt__body--md">📓 About me</button></a
+              ><div class="txt__body--md homepage-btn-inner">
+                📓 About me
+              </div></a
             >
           </div>
           <div class="homepage-about-img">
@@ -184,11 +186,10 @@
       <!-- End About Section -->
 
       <!-- Start Work Section -->
-      <section id="homepage-work">
-        <div class="homepage-header">
-          <h2 class="txt__title--bd">&centerdot; Work &centerdot;</h2>
-        </div>
-
+      <div class="homepage-work-header">
+        <h2 class="txt__display">Work</h2>
+      </div>
+      <section id="homepage-work" class="grid__inner">
         <div class="homepage-container">
           <div class="homepage-work-container grid__col-2-gap-2">
             <a href="#" id="teleparty">
@@ -250,8 +251,8 @@
     <!-- End Main Body Content -->
 
     <!-- Start Footer -->
-    <footer class="setWidthProp">
-      <div class="footer-container grid__col-3">
+    <footer class="grid__main">
+      <div class="footer-container grid__inner grid__col-3">
         <div class="footer-left">
           <p class="txt__body--rg">
             Made with 🖤 by
