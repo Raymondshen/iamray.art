@@ -1,0 +1,108 @@
+.nav {
+  &-wrapper {
+    padding: 1rem 16px;
+    @include bp(desktop) {
+      padding: 3rem 16px;
+    }
+  }
+  &-container {
+    @include flex-row();
+    justify-content: space-between;
+  }
+  &-header,
+  &-list {
+    a {
+      font-weight: var(--medium);
+      color: var(--primary-black);
+      transition: 0.3s ease;
+      &:hover {
+        color: var(--base-gold);
+      }
+    }
+  }
+  &-list {
+    @include flex-row();
+    li {
+      margin-left: 1rem;
+      a sup {
+        color: var(--secondary-black);
+      }
+    }
+  }
+}
+
+/* Footer Section */
+.ftr {
+  &-contact {
+    padding-bottom: 0rem;
+    @include bp(tablet) {
+      @include grid-12();
+      padding-bottom: 3rem;
+    }
+
+    &-desc {
+      display: none;
+      @include bp(tablet) {
+        display: block;
+        @include grid-start-end(1, 5);
+      }
+      @include bp(desktop) {
+        @include grid-start-end(1, 4);
+      }
+    }
+    &-img {
+      @include bp(tablet) {
+        display: none;
+      }
+    }
+    &-email {
+      display: none;
+      @include bp(tablet) {
+        display: block;
+        @include grid-start-end(5, 8);
+      }
+      @include bp(desktop) {
+        @include grid-start-end(4, 7);
+      }
+
+      a {
+        width: fit-content;
+        color: var(--secondary-black);
+        text-decoration: underline;
+        transition: 0.3s ease;
+        &:hover {
+          color: var(--base-gold);
+        }
+      }
+    }
+    &-source {
+      display: none;
+      @include bp(desktop) {
+        display: block;
+        @include grid-start-end(7, 10);
+      }
+      a {
+        width: fit-content;
+        color: var(--secondary-black);
+        text-decoration: underline;
+        transition: 0.3s ease;
+        &:hover {
+          color: var(--base-gold);
+        }
+      }
+    }
+    &-destination {
+      display: none;
+      text-align: end;
+      @include bp(tablet) {
+        display: block;
+        @include grid-start-end(10, 13);
+      }
+      p {
+        color: var(--light-black-1);
+      }
+    }
+  }
+}
+
+/* Footer Section */

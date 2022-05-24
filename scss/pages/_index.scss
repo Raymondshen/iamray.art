@@ -1,0 +1,286 @@
+.right-arrow {
+  .line {
+    display: inline-block;
+    border-top: 1px solid var(--secondary-black);
+    width: 89%;
+  }
+
+  .triangle {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    transform: rotate(135deg);
+    transform-origin: center center;
+    border-top: 1px solid var(--secondary-black);
+    border-left: 1px solid var(--secondary-black);
+    margin-left: -12px;
+    margin-right: -3px;
+    margin-bottom: -3px;
+  }
+}
+
+.idx {
+  &-wrapper {
+    padding-top: 6rem;
+    @include bp(desktop) {
+      padding-top: 12rem;
+    }
+  }
+  &-container {
+    @include grid-4();
+    @include bp(tablet) {
+      @include grid-12();
+    }
+  }
+  &-num {
+    font-style: normal;
+    font-weight: var(--medium);
+    color: var(--light-black-1);
+    grid-row: 1;
+    @include grid-start-end(1, 5);
+    @include bp(tablet) {
+      @include grid-start-end(1, 2);
+    }
+  }
+  &-heading {
+    @include grid-start-end(1, 5);
+    font-weight: var(--exBold);
+    color: var(--primary-black);
+    grid-row: 2;
+    @include bp(tablet) {
+      @include grid-start-end(2, 13);
+    }
+  }
+  &-btn {
+    margin-top: 1.5rem;
+    @include bp(tablet) {
+      margin-top: 3rem;
+    }
+    a {
+      width: fit-content;
+      border: 1px solid var(--primary-black);
+      text-align: center;
+      font-weight: var(--medium);
+      color: var(--primary-black);
+      padding: 1rem 2rem;
+      transition: 0.3s ease;
+      &:hover {
+        color: var(--base-white);
+        background: var(--base-black);
+        transform: translate(6px, -6px);
+        box-shadow: -6px 6px var(--base-gold);
+      }
+    }
+  }
+  &-intro {
+    .idx-num {
+      padding-bottom: 1.5rem;
+    }
+    &-heading {
+      color: var(--primary-black);
+      text-transform: uppercase;
+      line-height: 90%;
+      &-r1 {
+        @extend .idx-intro-heading;
+        grid-row: 2;
+
+        @include grid-start-end(1, 5);
+        padding-bottom: 1.5rem;
+        @include bp(tablet) {
+          @include grid-start-end(2, 8);
+        }
+        @include bp(desktop) {
+          @include grid-start-end(2, 7);
+          padding-bottom: 6rem;
+        }
+      }
+      &-r2 {
+        @extend .idx-intro-heading;
+        grid-row: 4;
+
+        @include grid-start-end(1, 5);
+        padding-top: 1.5rem;
+        @include bp(tablet) {
+          @include grid-start-end(6, 12);
+        }
+        @include bp(desktop) {
+          @include grid-start-end(8, 12);
+          padding-top: 6rem;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      grid-row: 3;
+      opacity: 0.8;
+      @include grid-start-end(1, 5);
+      @include bp(tablet) {
+        @include grid-start-end(2, 12);
+      }
+      @include bp(desktop) {
+        @include grid-start-end(2, 12);
+      }
+    }
+  }
+  &-description {
+    padding-top: 1.5rem;
+    @include bp(desktop) {
+      padding-top: 6rem;
+    }
+    &-detail {
+      display: none;
+      @include grid-start-end(2, 3);
+      color: var(--light-black-1);
+      @include bp(desktop) {
+        display: block;
+      }
+    }
+    &-content {
+      &-col1 {
+        @include grid-start-end(1, 5);
+        @include bp(tablet) {
+          @include grid-start-end(6, 12);
+        }
+        @include bp(desktop) {
+          @include grid-start-end(3, 7);
+        }
+      }
+      &-col2 {
+        @include grid-start-end(1, 5);
+        padding-top: 1.5rem;
+        @include bp(tablet) {
+          @include grid-start-end(6, 12);
+        }
+        @include bp(desktop) {
+          @include grid-start-end(8, 12);
+          padding-top: 0rem;
+        }
+      }
+    }
+    &-btn {
+      grid-row: 4;
+      @include grid-start-end(1, 5);
+      @include bp(tablet) {
+        @include grid-start-end(6, 13);
+      }
+      @include bp(desktop) {
+        @include grid-start-end(3, 13);
+      }
+    }
+  }
+  &-project {
+    &-item {
+      border-bottom: 1px solid var(--light-black-3);
+      @include grid-4();
+      @include grid-start-end(1, 5);
+      padding: 3rem 0rem;
+      @include bp(tablet) {
+        @include grid-12();
+        @include grid-start-end(1, 13);
+        padding: 6rem 0rem;
+      }
+      &-title {
+        @include grid-4();
+        @include grid-start-end(1, 5);
+        @include bp(tablet) {
+          @include grid-12();
+          @include grid-start-end(1, 13);
+        }
+        p {
+          &:first-child {
+            color: var(--light-black-1);
+            @include grid-start-end(1, 2);
+            font-size: 0.9rem;
+            @include bp(tablet) {
+              @include grid-start-end(2, 3);
+              font-size: 1rem;
+            }
+          }
+          &:nth-child(2) {
+            color: var(--light-black-1);
+            @include grid-start-end(2, 5);
+            @include bp(tablet) {
+              @include grid-start-end(3, 13);
+            }
+          }
+        }
+      }
+      &-name {
+        @include grid-4();
+        @include grid-start-end(1, 5);
+        @include bp(tablet) {
+          @include grid-12();
+          @include grid-start-end(1, 13);
+        }
+        p {
+          font-weight: var(--exBold);
+          text-transform: uppercase;
+          color: var(--primary-black);
+          transition: 0.3s ease;
+          font-size: 3.5rem;
+          @include grid-start-end(1, 5);
+          @include bp(tablet) {
+            @include grid-start-end(2, 13);
+            font-size: 7rem;
+          }
+
+          &:hover {
+            text-shadow: -6px 6px var(--base-gold);
+            transform: translate(6px, -6px);
+          }
+        }
+      }
+      &-description {
+        @include grid-4();
+        @include grid-start-end(1, 5);
+        @include bp(tablet) {
+          @include grid-12();
+          @include grid-start-end(1, 13);
+        }
+        .right-arrow {
+          @include grid-start-end(1, 2);
+          @include bp(tablet) {
+            @include grid-start-end(2, 3);
+          }
+        }
+        p {
+          color: var(--secondary-black);
+          @include grid-start-end(2, 5);
+          font-size: 0.9rem;
+          @include bp(tablet) {
+            @include grid-start-end(3, 13);
+            font-size: 1rem;
+          }
+        }
+      }
+      &-btn {
+        @include grid-start-end(1, 5);
+        @include bp(tablet) {
+          @include grid-start-end(2, 13);
+        }
+      }
+    }
+  }
+  &-contact {
+    padding-bottom: 6rem;
+    @include bp(desktop) {
+      padding-bottom: 12rem;
+    }
+    &-email {
+      text-decoration: underline;
+      transition: 0.3s ease;
+      color: var(--secondary-black);
+      grid-row: 3;
+      @include grid-start-end(1, 5);
+      @include bp(tablet) {
+        @include grid-start-end(6, 12);
+      }
+      @include bp(desktop) {
+        @include grid-start-end(2, 12);
+      }
+      &:hover {
+        color: var(--base-gold);
+      }
+    }
+  }
+}

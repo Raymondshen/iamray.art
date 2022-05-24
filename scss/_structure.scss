@@ -1,0 +1,95 @@
+/* Breakpoint Settings */
+$breakpoints: (
+  phone: 320px,
+  // Landscape phones
+  landscape-phone: 576px,
+  // Tablets
+  tablet: 768px,
+  // Desktops
+  desktop: 992px,
+  // Large Desktop
+  large-desktop: 1200px,
+);
+
+@mixin bp($breaksize) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breaksize) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breaksize)) {
+      @content;
+    }
+  }
+}
+/* Breakpoint Settings */
+
+/* Layout Settings*/
+.set-layout {
+  max-width: 1600px;
+  padding: 0px 16px;
+  @include bp(large-desktop) {
+    margin: 0 auto;
+    padding: 0px 16px;
+  }
+}
+/* Layout Settings */
+
+/* Grid Settings */
+
+@mixin grid-start-end($start, $end) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+
+@mixin grid-2to1() /* Flexbox */ {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: 2fr 0.6fr;
+}
+
+@mixin grid-1to2() {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: 0.6fr 2fr;
+}
+
+@mixin grid-12() {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@mixin grid-4() {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* Grid Settings */
+
+/* Flexbox */
+@mixin flex-row() {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@mixin flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+/* Flexbox */
+
+/* Height & Width */
+@mixin set-wh($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin set-wh100() {
+  width: 100%;
+  height: 100%;
+}
+/* Height & Width */
