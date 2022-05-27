@@ -60,9 +60,24 @@
       </ul>
     </nav>
     <!-- Navigation -->
+
     <!-- Mouse Follow -->
     <div id="mse-circle"></div>
     <!-- Mouse Follow -->
+
+    <!-- Notification Banner -->
+    <div id="nfn-banner" class="nfn-wrapper">
+      <div class="nfn-container">
+        <div class="nfn-txt-email">
+          <img
+            src="../img/index/animoji_thumbs_up.png"
+            alt="Animoji of Raymond Shen in a beanie with glasses"
+          />
+          <p class="txt-body">Email Copied &mdash; Lets Chat!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Notification Banner -->
     <main>
       <div class="pjt-name-wrapper set-layout">
         <div class="pjt-container">
@@ -326,20 +341,31 @@
         </div>
       </div>
     </main>
+
     <!-- Footer Section -->
     <footer class="ftr-wrapper ftr-contact set-layout">
       <div class="ftr-contact-desc">
-        <p class="txt-body">Designed and Developed by</p>
-        <p class="txt-body">Raymond Shen</p>
+        <img
+          class="ftr-contact-desc-img"
+          src="../img/index/animoji_tongue.png"
+          alt="Animoji of Raymond Shen in a beanie with glasses tongue sticking out."
+        />
+        <div class="ftr-contact-desc-txt">
+          <p class="txt-body">Designed & Build By</p>
+          <p class="txt-body">Raymond Shen</p>
+        </div>
       </div>
       <div class="ftr-contact-img">
         <img src="../img/index/raymond_cartoon.svg" alt="" />
       </div>
       <div class="ftr-contact-email">
         <p class="txt-body">Email info:</p>
-        <a href="mailto:raymonds.shenz@gmail.com" class="txt-body"
-          >raymonds.shenz@gmail.com</a
+        <button
+          onclick="copyToClipboard('.js-clipEmail')"
+          class="txt-body emailBtn"
         >
+          raymonds.shenz@gmail.com
+        </button>
       </div>
       <div class="ftr-contact-source">
         <p class="txt-body">Credit & Sources:</p>
