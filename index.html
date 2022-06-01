@@ -20,6 +20,29 @@
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Meta Tags Ends -->
 
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon -->
+
     <!-- Title Starts -->
     <title>iamray.art</title>
     <!-- Title Ends -->
@@ -65,10 +88,6 @@
     <div id="nfn-banner" class="nfn-wrapper">
       <div class="nfn-container">
         <div class="nfn-txt-email">
-          <img
-            src="img/index/animoji_thumbs_up.png"
-            alt="Animoji of Raymond Shen in a beanie with glasses"
-          />
           <p class="txt-body">Email Copied &mdash; Lets Chat!</p>
         </div>
       </div>
@@ -201,13 +220,27 @@
           <div class="idx-num">
             <p class="txt-body lora">03.</p>
           </div>
-          <button
-            href="mailto:raymonds.shenz@gmail.com"
+          <div
+            id="idx-emailBtn-desktop"
             class="txt-heading idx-contact-email emailBtn"
             onclick="copyToClipboard('.js-clipEmail')"
           >
-            raymonds.shenz@gmail.com
-          </button>
+            <p id="idx-contact-email-name">raymonds.shenz@gmail.com</p>
+            <p id="idx-contact-email-copy">
+              <img
+                src="img/index/animoji_headtilt.png"
+                alt="Animoji of Raymond Shen Head tilting by Apple"
+              />
+              Copy Email
+            </p>
+          </div>
+          <div
+            id="idx-emailBtn-mobile"
+            class="txt-heading idx-contact-email emailBtn"
+            onclick="copyToClipboard('.js-clipEmail')"
+          >
+            <p id="idx-contact-email-name">raymonds.shenz@gmail.com</p>
+          </div>
         </div>
       </div>
     </main>
@@ -220,7 +253,7 @@
           alt="Animoji of Raymond Shen in a beanie with glasses tongue sticking out."
         />
         <div class="ftr-contact-desc-txt">
-          <p class="txt-body">Designed & Build By</p>
+          <p class="txt-body">Designed & Built By</p>
           <p class="txt-body">Raymond Shen</p>
         </div>
       </div>
@@ -252,6 +285,7 @@
 
     <!-- Script Section -->
     <script src="js/main.js"></script>
+    <script src="anime.min.js"></script>
     <script src="js/sketch.js"></script>
     <!-- Script Section -->
   </body>
