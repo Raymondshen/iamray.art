@@ -63,6 +63,28 @@ $(document).ready(function () {
     animateTxtOut();
   });
   /* Call Function */
+
+  /* Index Project JS */
+  $(".idx-project-item")
+    .mouseenter(function () {
+      $(this)
+        .find(".idx-project-item-image")
+        .css({ transform: "rotate(8deg)", opacity: "1" });
+      $(this).find(".idx-project-item-name p").css({
+        textShadow: "-6px 6px var(--base-gold)",
+        transform: "translate(6px,-6px)",
+      });
+    })
+    .mouseleave(function () {
+      $(this)
+        .find(".idx-project-item-image")
+        .css({ transform: "rotate(0deg)", opacity: "0" });
+      $(this).find(".idx-project-item-name p").css({
+        textShadow: "0px 0px var(--base-gold)",
+        transform: "translate(0px,0px)",
+      });
+    });
+  /* Index Project JS */
 });
 /* -- Document Ready -- */
 
