@@ -21,7 +21,7 @@ $(document).ready(function () {
     setTimeout(() => {
       eName.style.top = "-5rem";
       eName.style.opacity = "0";
-    }, 3000);
+    }, 1500);
   };
 
   // Animate Text Up & Down
