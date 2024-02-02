@@ -1,0 +1,94 @@
+/* Start Initiate Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@400;500;600;700;800&display=swap");
+/* End Initiate Google Fonts */
+
+/* Start Family Styles */
+$poppins: "Poppins", sans-serif;
+$lora: "Lora", serif;
+/* End Family Styles */
+
+/* Start Root Typograhy */
+:root {
+    --regular: 400;
+    --medium: 500;
+    --semiBold: 600;
+    --bold: 700;
+    --exBold: 800;
+}
+
+/* End Root Typography */
+
+@mixin set-font($family, $weight, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+}
+
+/* Start Text Size, Styles, Weight */
+
+a {
+    color: var(--netural-50);
+    transition: .3s ease;
+
+    &:hover {
+        color: var(--gold);
+    }
+}
+
+.txt {
+
+    &-display {
+        font-family: $poppins;
+        font-weight: var(--exBold);
+        font-size: clamp(3rem, 5vw, 5rem);
+        color: var(--neutral-50);
+        text-transform: uppercase;
+        line-height: 90%;
+
+    }
+
+    &-heading {
+        font-family: $poppins;
+        font-weight: var(--exBold);
+        color: var(--primary-black);
+        text-transform: uppercase;
+        line-height: 90%;
+        font-size: 3rem;
+
+    }
+
+    &-title {
+        font-family: $poppins;
+        font-weight: var(--medium);
+        color: var(--neutral-50);
+        font-size: 1rem;
+
+        @include bp(large-desktop) {
+            font-size: 1rem;
+        }
+    }
+
+    &-body {
+        font-family: $poppins;
+        font-weight: var(--regular);
+        font-size: clamp(1rem, 4vw, 1.15rem);
+        color: var(--neutral-100);
+        line-height: 150%;
+        letter-spacing: -0.1px;
+
+        &-md {
+            @extend .txt-body;
+            font-weight: var(--medium);
+        }
+    }
+
+    &-label {
+        font-family: $lora;
+        font-weight: var(--regular);
+        font-style: italic;
+        color: var(--neutral-100);
+        text-transform: capitalize;
+        font-size: clamp(1rem, 4vw, 1.15rem);
+    }
+
+}

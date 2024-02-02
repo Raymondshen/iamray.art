@@ -1,0 +1,88 @@
+body,
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gloabl Setting*/
+* {
+  box-sizing: border-box;
+}
+
+/* Remove Padding & Margin + Additional Default Properties */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li,
+ol,
+button,
+body,
+html,
+img,
+div,
+figure {
+  padding: 0em;
+  margin: 0em;
+  outline: none;
+  word-wrap: break-word;
+}
+
+/* Clear Text Decorations & List-Styles */
+ul,
+li,
+ol,
+a {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+/* Clear Text Decorations & List-Styles */
+
+/* Inheritance Property */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+
+ul li {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+
+ol li {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+/* Inheritance Property */
+
+/* Display Block */
+a {
+  display: block;
+}

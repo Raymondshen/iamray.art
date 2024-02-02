@@ -1,0 +1,15 @@
+// sass --watch main.scss:../css/main.css --style compressed
+
+/* Default Reset */
+@import "reset";
+
+/* Root Styles */
+@import "structure";
+@import "color";
+@import "typography";
+@import "global";
+/* Root Styles */
+
+/* Custom Page Styles */
+@import "pages/index";
+/* Custom Page Styles */

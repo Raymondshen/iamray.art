@@ -1,0 +1,16 @@
+/* Start Root Colors */
+:root {
+  --neutral-50 : #1a1a1a;
+  --neutral-100 : #333333;
+  --neutral-150 : #808080;
+  --neutral-200 : #b3b3b3;
+  --neutral-250: #ffffff;
+  --gold : #f0a40e;
+}
+
+::selection {
+  background: #eaa72052;
+}
+::-moz-selection {
+  background: #eaa72052;
+}
