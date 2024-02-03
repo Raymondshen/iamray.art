@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -57,72 +58,72 @@
             </div>
             <a href="#" class="index-bio-btn txt-body">Digital Résumé →</a>
         </div>
-        <div class="index-work-wrapper">
+        <div class="work-wrapper">
             <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="#" class="index-work-row img-hover">
-                <div class="index-work-date-category">
+            <a href="#" class="work-row img-hover">
+                <div class="work-date-category">
                     <p class="txt-label">present</p>
                     <p class="txt-label">group platform</p>
                 </div>
-                <div class="index-work-title">
+                <div class="work-title">
                     <h1 class="txt-display">heylo.co</h1>
                 </div>
-                <div class="index-work-arrow-role">
+                <div class="work-arrow-role">
                     <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
                     <p class="txt-label">first designer</p>
                 </div>
-                <div class="index-work-img img-hidden">
+                <div class="work-img img-hidden">
                     <img src="img/index/idx_teleparty.jpg" alt="">
                 </div>
             </a>
             <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="#" class="index-work-row img-hover">
-                <div class="index-work-date-category">
+            <a href="pages/teleparty.html" class="work-row img-hover">
+                <div class="work-date-category">
                     <p class="txt-label">oct. 2022</p>
                     <p class="txt-label">group streaming</p>
                 </div>
-                <div class="index-work-title">
+                <div class="work-title">
                     <h1 class="txt-display">teleparty</h1>
                 </div>
-                <div class="index-work-arrow-role">
+                <div class="work-arrow-role">
                     <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
                     <p class="txt-label">product design</p>
                 </div>
-                <div class="index-work-img img-hidden">
+                <div class="work-img img-hidden">
                     <img src="img/index/idx_teleparty.jpg" alt="">
                 </div>
             </a>
             <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="#" class="index-work-row img-hover">
-                <div class="index-work-date-category">
+            <a href="#" class="work-row img-hover">
+                <div class="work-date-category">
                     <p class="txt-label">jun. 2020</p>
                     <p class="txt-label">career coach</p>
                 </div>
-                <div class="index-work-title">
+                <div class="work-title">
                     <h1 class="txt-display">hireclub</h1>
                 </div>
-                <div class="index-work-arrow-role">
+                <div class="work-arrow-role">
                     <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
                     <p class="txt-label">first designer</p>
                 </div>
-                <div class="index-work-img img-hidden">
+                <div class="work-img img-hidden">
                     <img src="img/index/idx_hireclub.jpg" alt="">
                 </div>
             </a>
             <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="#" class="index-work-row img-hover">
-                <div class="index-work-date-category">
+            <a href="#" class="work-row img-hover">
+                <div class="work-date-category">
                     <p class="txt-label">oct. 2018</p>
                     <p class="txt-label">ai transcriber</p>
                 </div>
-                <div class="index-work-title">
+                <div class="work-title">
                     <h1 class="txt-display">fireflies.ai</h1>
                 </div>
-                <div class="index-work-arrow-role">
+                <div class="work-arrow-role">
                     <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
                     <p class="txt-label">product design</p>
                 </div>
-                <div class="index-work-img img-hidden">
+                <div class="work-img img-hidden">
                     <img src="img/index/idx_fireflies.jpg" alt="">
                 </div>
             </a>
@@ -153,24 +154,9 @@
                 </div>
             </div>
         </footer>
+        <a href="#" class="index-backtop-btn txt-body">back top</a>
     </main>
-    <script>
-        $(function () {
-            $(".img-hover").hover(function () {
-                $(this).find(".img-hidden").css({ transform: 'rotate(10deg)', opacity: "1" });
-                $(this).find(".index-work-title").css({
-                    textShadow: "-6px 6px var(--gold)",
-                    transform: "translate(2px,-2px)",
-                });
-            }, function () {
-                $(this).find(".img-hidden").css({ transform: 'rotate(0deg)', opacity: "0" });
-                $(this).find(".index-work-title").css({
-                    textShadow: "0px 0px var(--gold)",
-                    transform: "translate(0px,0px)",
-                });
-            });
-        });
-    </script>
+
 </body>
 
 </html>
