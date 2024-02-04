@@ -1,162 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Start Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
 
     <!-- Search Eengine and Browser -->
-    <meta name="description" content=""> <!-- Keep under 500 characters -->
-    <meta name="abstract" content=""> <!-- Keep uder 100 characters -->
-    <meta name="rating" content="General"> <!-- General, 14 Years, Mature or Restricted -->
+    <meta name="description" content="" />
+    <!-- Keep under 500 characters -->
+    <meta name="abstract" content="" />
+    <!-- Keep uder 100 characters -->
+    <meta name="rating" content="General" />
+    <!-- General, 14 Years, Mature or Restricted -->
 
     <!-- End Meta Tags -->
 
     <!-- Document Title -->
     <title>iamray.art</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="nav-wrapper layout">
-        <ul class="nav-container layout-grid">
-            <ul class="nav-header">
-                <li><a class="txt-body-md" href="http://">iamray</a></li>
-            </ul>
-            <ul class="nav-list">
-                <li><a class="txt-body-md" href="http://">about</a></li>
-                <li><a class="txt-body-md" href="#work">work</a></li>
-                <li><a class="txt-body-md" href="http://">contact</a></li>
-            </ul>
+      <ul class="nav-container layout-grid">
+        <ul class="nav-header">
+          <li><a class="txt-body-md" href="http://">iamray</a></li>
         </ul>
+        <ul class="nav-list">
+          <li><a class="txt-body-md" href="http://">about</a></li>
+          <li><a class="txt-body-md" href="#work">work</a></li>
+          <li><a class="txt-body-md" href="http://">contact</a></li>
+        </ul>
+      </ul>
     </nav>
     <main class="layout-main">
-        <div class="index-hero-wrapper layout-grid">
-            <h2 class="txt-display">Digital Designer</h2>
-            <h2 class="txt-display">St. Michael Minnesota</h2>
-            <img src="img/index/image-raymondshen.jpg" alt="">
+      <div id="index-hero" class="index-hero-wrapper layout-grid">
+        <h2 class="txt-display">Digital Designer</h2>
+        <h2 class="txt-display">St. Michael Minnesota</h2>
+        <img
+          src="img/index/image-raymondshen.jpg"
+          alt="Image of me (Raymond Shen) in black and white"
+        />
+      </div>
+      <div class="index-bio-wrapper layout-grid">
+        <p class="index-bio-title txt-label grid-row-full">
+          <i>Passion for Design 🎨 · Code 👾 · Plants 🌱 · education 🎓</i>
+        </p>
+        <div class="index-bio-description layout-grid grid-row-full">
+          <p class="txt-body">
+            Hello, I'm Raymond Shen, a Digital Designer with 6 years of
+            experience. I specialize in crafting customized digital solutions
+            for startups, covering design systems, UI/UX, branding, and digital
+            assets.
+          </p>
+          <p class="txt-body">
+            Currently based in Minnesota, I am the first designer at Heylo. In
+            this role, I collaborate closely with the team to enhance digital
+            product design across mobile, websites, assets, and branding.
+          </p>
         </div>
-        <div class="index-bio-wrapper layout-grid">
-            <p class="index-bio-title txt-label grid-row-full">
-                <i>Passion for Design 🎨 · Code 👾 · Plants 🌱 · education 🎓</i>
-            </p>
-            <div class="index-bio-description layout-grid grid-row-full">
-                <p class="txt-body">
-                    Hello, I'm Raymond Shen, a Digital Designer with 6 years of experience. I specialize
-                    in crafting customized digital solutions for startups, covering design systems, UI/UX, branding, and
-                    digital assets.
-                </p>
-                <p class="txt-body">
-                    Currently based in Minnesota, I am the first designer at Heylo. In this role, I collaborate closely
-                    with the team to enhance digital product design across mobile, websites, assets, and branding.
-                </p>
+        <a
+          href="https://shorturl.at/ckLPU"
+          target="_blank"
+          class="index-bio-btn txt-body"
+        >
+          Digital Résumé →
+        </a>
+      </div>
+      <div id="work" class="work-wrapper">
+        <img class="img-divider" src="img/index/line.svg" />
+
+        <!-- Heylo -->
+        <a href="#" class="work-row img-hover">
+          <div class="work-date-category">
+            <p class="txt-label">present</p>
+            <p class="txt-label">group platform</p>
+          </div>
+          <div class="work-title">
+            <h1 class="txt-display">heylo.co</h1>
+          </div>
+          <div class="work-arrow-role">
+            <img src="img/index/line-arrow.svg" class="line-arrow" />
+            <p class="txt-label">first designer</p>
+          </div>
+          <div class="work-img img-hidden">
+            <img src="img/index/idx_teleparty.jpg" alt="" />
+          </div>
+        </a>
+        <!-- Heylo -->
+
+        <img class="img-divider" src="img/index/line.svg" />
+
+        <!-- Teleparty -->
+        <a href="pages/teleparty.html" class="work-row img-hover">
+          <div class="work-date-category">
+            <p class="txt-label">oct. 2022</p>
+            <p class="txt-label">group streaming</p>
+          </div>
+          <div class="work-title">
+            <h1 class="txt-display">teleparty</h1>
+          </div>
+          <div class="work-arrow-role">
+            <img src="img/index/line-arrow.svg" class="line-arrow" />
+            <p class="txt-label">product design</p>
+          </div>
+          <div class="work-img img-hidden">
+            <img
+              src="img/index/idx_teleparty.jpg"
+              alt="A design of Teleparty's mobile app"
+            />
+          </div>
+        </a>
+        <!-- Teleparty -->
+
+        <img class="img-divider" src="img/index/line.svg" />
+
+        <!-- Hireclub -->
+        <a href="pages/hireclub.html" class="work-row img-hover">
+          <div class="work-date-category">
+            <p class="txt-label">jun. 2020</p>
+            <p class="txt-label">career coach</p>
+          </div>
+          <div class="work-title">
+            <h1 class="txt-display">hireclub</h1>
+          </div>
+          <div class="work-arrow-role">
+            <img src="img/index/line-arrow.svg" class="line-arrow" />
+            <p class="txt-label">first designer</p>
+          </div>
+          <div class="work-img img-hidden">
+            <img
+              src="img/index/idx_hireclub.jpg"
+              alt="Design of Hireclub's web advertisements"
+            />
+          </div>
+        </a>
+        <!-- Hireclub -->
+
+        <img class="img-divider" src="img/index/line.svg" />
+
+        <!-- Fireflies -->
+        <a href="pages/fireflies.html" class="work-row img-hover">
+          <div class="work-date-category">
+            <p class="txt-label">oct. 2018</p>
+            <p class="txt-label">ai transcriber</p>
+          </div>
+          <div class="work-title">
+            <h1 class="txt-display">fireflies.ai</h1>
+          </div>
+          <div class="work-arrow-role">
+            <img src="img/index/line-arrow.svg" class="line-arrow" />
+            <p class="txt-label">product design</p>
+          </div>
+          <div class="work-img img-hidden">
+            <img
+              src="img/index/idx_fireflies.jpg"
+              alt="Website design sample of Fireflies.ai landing page section"
+            />
+          </div>
+        </a>
+        <!-- Fireflies -->
+
+        <img class="img-divider" src="img/index/line.svg" />
+      </div>
+      <footer>
+        <div class="footer-wrapper layout-grid">
+          <div class="footer-madeby">
+            <div class="footer-content-image">
+              <img
+                src="img/index/animoji_headtilt.png"
+                alt="Animoji of Raymond Shen smiling in a grey beanie"
+              />
             </div>
-            <a href="https://shorturl.at/ckLPU" target="_blank" class="index-bio-btn txt-body">Digital Résumé →</a>
-        </div>
-        <div id="work"class="work-wrapper">
-            <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="#" class="work-row img-hover">
-                <div class="work-date-category">
-                    <p class="txt-label">present</p>
-                    <p class="txt-label">group platform</p>
-                </div>
-                <div class="work-title">
-                    <h1 class="txt-display">heylo.co</h1>
-                </div>
-                <div class="work-arrow-role">
-                    <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
-                    <p class="txt-label">first designer</p>
-                </div>
-                <div class="work-img img-hidden">
-                    <img src="img/index/idx_teleparty.jpg" alt="">
-                </div>
-            </a>
-            <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="pages/teleparty.html" class="work-row img-hover">
-                <div class="work-date-category">
-                    <p class="txt-label">oct. 2022</p>
-                    <p class="txt-label">group streaming</p>
-                </div>
-                <div class="work-title">
-                    <h1 class="txt-display">teleparty</h1>
-                </div>
-                <div class="work-arrow-role">
-                    <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
-                    <p class="txt-label">product design</p>
-                </div>
-                <div class="work-img img-hidden">
-                    <img src="img/index/idx_teleparty.jpg" alt="">
-                </div>
-            </a>
-            <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="pages/hireclub.html" class="work-row img-hover">
-                <div class="work-date-category">
-                    <p class="txt-label">jun. 2020</p>
-                    <p class="txt-label">career coach</p>
-                </div>
-                <div class="work-title">
-                    <h1 class="txt-display">hireclub</h1>
-                </div>
-                <div class="work-arrow-role">
-                    <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
-                    <p class="txt-label">first designer</p>
-                </div>
-                <div class="work-img img-hidden">
-                    <img src="img/index/idx_hireclub.jpg" alt="">
-                </div>
-            </a>
-            <img class="img-divider" src="img/index/line.svg" alt="">
-            <a href="pages/fireflies.html" class="work-row img-hover">
-                <div class="work-date-category">
-                    <p class="txt-label">oct. 2018</p>
-                    <p class="txt-label">ai transcriber</p>
-                </div>
-                <div class="work-title">
-                    <h1 class="txt-display">fireflies.ai</h1>
-                </div>
-                <div class="work-arrow-role">
-                    <img src="img/index/line-arrow.svg" alt="" class="line-arrow">
-                    <p class="txt-label">product design</p>
-                </div>
-                <div class="work-img img-hidden">
-                    <img src="img/index/idx_fireflies.jpg" alt="">
-                </div>
-            </a>
-            <img class="img-divider" src="img/index/line.svg" alt="">
-        </div>
-        <footer>
-            <div class="footer-wrapper layout-grid">
-                <div class="footer-madeby">
-                    <div class="footer-content-image">
-                        <img src="img/index/animoji_headtilt.png" alt="">
-                    </div>
-                    <div class="footer-content-container">
-                        <p class="footer-content-title txt-title">Designed & Built By</p>
-                        <a href="" class="footer-content-description txt-body">Raymond Shen</a>
-                    </div>
-                </div>
-                <div class="footer-email">
-                    <div class="footer-content-container">
-                        <p class="footer-content-title txt-title">Email Info</p>
-                        <a href="" class="footer-content-description txt-body">shenraymonds@gmail.com</a>
-                    </div>
-                </div>
-                <div class="footer-credit">
-                    <div class="footer-content-container">
-                        <p class="footer-content-title txt-title">Credit & Sources</p>
-                        <a href="" class="footer-content-description txt-body">View details</a>
-                    </div>
-                </div>
+            <div class="footer-content-container">
+              <p class="footer-content-title txt-title">Designed & Built By</p>
+              <a href="" class="footer-content-description txt-body">
+                Raymond Shen
+              </a>
             </div>
-        </footer>
-        <a href="#" class="index-backtop-btn txt-body">back top</a>
+          </div>
+          <div class="footer-email">
+            <div class="footer-content-container">
+              <p class="footer-content-title txt-title">Email Info</p>
+              <a href="" class="footer-content-description txt-body"
+                >shenraymonds@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="footer-credit">
+            <div class="footer-content-container">
+              <p class="footer-content-title txt-title">Credit & Sources</p>
+              <a href="" class="footer-content-description txt-body"
+                >View details</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <a href="#index-hero" class="index-backtop-btn txt-body">back top</a>
     </main>
-
-</body>
-
+  </body>
 </html>
