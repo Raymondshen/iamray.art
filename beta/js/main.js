@@ -1,33 +1,57 @@
-function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-$(function () {
-  if (!isMobile()) {
-      $(".img-hover").hover(
-          function () {
-              $(this)
-                  .find(".img-hidden")
-                  .css({ transform: "rotate(10deg)", opacity: "1" });
-              $(this).find(".work-title").css({
-                  textShadow: "-6px 6px var(--gold)",
-                  transform: "translate(2px,-2px)",
-              });
-          },
-          function () {
-              $(this)
-                  .find(".img-hidden")
-                  .css({ transform: "rotate(0deg)", opacity: "0" });
-              $(this).find(".work-title").css({
-                  textShadow: "0px 0px var(--gold)",
-                  transform: "translate(0px,0px)",
-              });
-          }
-      );
+$(document).ready(function () {
+  /* Detect if isMobile */
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
   }
+  /* Detect if isMobile */
+
+  /* On hover show work img */
+  $(function () {
+    if (!isMobile()) {
+      $(".img-hover").hover(
+        function () {
+          $(this)
+            .find(".img-hidden")
+            .css({ transform: "rotate(10deg)", opacity: "1" });
+          $(this).find(".work-title").css({
+            textShadow: "-6px 6px var(--gold)",
+            transform: "translate(2px,-2px)",
+          });
+        },
+        function () {
+          $(this)
+            .find(".img-hidden")
+            .css({ transform: "rotate(0deg)", opacity: "0" });
+          $(this).find(".work-title").css({
+            textShadow: "0px 0px var(--gold)",
+            transform: "translate(0px,0px)",
+          });
+        }
+      );
+    }
+  });
+  /* On Hover Show Work Img */
+
+  /* Show/Hide Snack Bar */
+  $("#copyemail").click(function () {
+    $("#snackbar-wrapper").addClass('show');
+
+    setTimeout(function () {
+      $("#snackbar-wrapper").removeClass('show');
+    }, 1500);
+  });
+  /* Show/Hide Snack Bar */
+
+  /* Clip to board */
+  $('#copyemail').click(function() {
+    const contentToCopy = $('#copyemail').text();
+});
 });
 
 /* Smooth Scroll by Chris Coyler */
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
