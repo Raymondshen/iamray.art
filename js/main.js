@@ -10,44 +10,53 @@ $(document).ready(function () {
   /* On hover show work img */
   $(function () {
     if (!isMobile()) {
-      $(".img-hover").hover(
-        function () {
-          $(this)
-            .find(".img-hidden")
-            .css({ transform: "rotate(10deg)", opacity: "1" });
-          $(this).find(".work-title").css({
-            textShadow: "-6px 6px var(--gold)",
-            transform: "translate(2px,-2px)",
+      $(".work-row").each(function () {
+        const $row = $(this);
+        const $imgContainer = $row.find(".work-img");
+
+        $row.on("mouseenter", function () {
+          $imgContainer.css({
+            opacity: 1,
+            transform: "translate(-50%, -50%) rotate(10deg)",
           });
-        },
-        function () {
-          $(this)
-            .find(".img-hidden")
-            .css({ transform: "rotate(0deg)", opacity: "0" });
-          $(this).find(".work-title").css({
-            textShadow: "0px 0px var(--gold)",
-            transform: "translate(0px,0px)",
+        });
+
+        $row.on("mousemove", function (e) {
+          const offset = $row.offset();
+          const x = e.pageX - offset.left;
+          const y = e.pageY - offset.top;
+
+          $imgContainer.css({
+            left: x + "px",
+            top: y + "px",
           });
-        }
-      );
+        });
+
+        $row.on("mouseleave", function () {
+          $imgContainer.css({
+            opacity: 0,
+            transform: "translate(-50%, -50%) rotate(0deg)",
+          });
+        });
+      });
     }
   });
   /* On Hover Show Work Img */
 
   /* Show/Hide Snack Bar */
   $("#copyemail").click(function () {
-    $("#snackbar-wrapper").addClass('show');
+    $("#snackbar-wrapper").addClass("show");
 
     setTimeout(function () {
-      $("#snackbar-wrapper").removeClass('show');
+      $("#snackbar-wrapper").removeClass("show");
     }, 1500);
   });
   /* Show/Hide Snack Bar */
 
   /* Clip to board */
-  $('#copyemail').click(function() {
-    const contentToCopy = $('#copyemail').text();
-});
+  $("#copyemail").click(function () {
+    const contentToCopy = $("#copyemail").text();
+  });
 });
 
 /* Smooth Scroll by Chris Coyler */
