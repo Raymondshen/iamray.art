@@ -88,7 +88,14 @@
           <li><a class="txt-body-md" href="index.html">iamray</a></li>
         </ul>
         <ul class="nav-list">
-          <li><a class="txt-body-md" href="#about">about</a></li>
+          <li>
+            <a
+              class="txt-body-md"
+              href="https://drive.google.com/file/d/1QeHkJDaX1YCvbsNdcsaDparwebjTJob9/view?usp=sharing"
+              target="_blank"
+              >resume</a
+            >
+          </li>
           <li><a class="txt-body-md" href="#work">work</a></li>
         </ul>
       </ul>
@@ -105,41 +112,25 @@
     <!-- Snackbar -->
 
     <!-- Document Body -->
-    <main class="layout-main">
+    <main id="index-layout" class="layout-main">
+      <!-- Spline Plugin -->
+      <script
+        type="module"
+        src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"
+      ></script>
       <div id="index-hero" class="index-hero-wrapper layout-grid">
-        <h2 class="txt-display">Product Designer</h2>
-        <h2 class="txt-display">St. Michael Minnesota</h2>
-        <img
-          id="about"
-          src="img/index/image-raymondshen.jpg"
-          alt="Image of me (Raymond Shen) in black and white"
-        />
+        <spline-viewer
+          class="spline"
+          url="https://prod.spline.design/fbybwEdniZq11gzk/scene.splinecode"
+        ></spline-viewer>
+        <!-- Spline Plugin -->
+
+        <h2 class="txt-display">
+          Hi! I'm Raymond, a UI/UX Designer @ Keeper Memorials , based remotely
+          in Minnesota.
+        </h2>
       </div>
-      <div class="index-bio-wrapper layout-grid">
-        <p class="index-bio-title txt-label grid-row-full">
-          <i>Passion for Design 🎨 · Code 👾 · Plants 🌱 · education 🎓</i>
-        </p>
-        <div class="index-bio-description layout-grid grid-row-full">
-          <p class="txt-body">
-            Hello, I'm Raymond Shen, a (Digital) Product Designer with 6 years
-            of experience. I specialize in crafting customized digital solutions
-            for startups, covering design systems, UI/UX, branding, and digital
-            assets.
-          </p>
-          <p class="txt-body">
-            Currently based in Minnesota, I am the first designer at Heylo. In
-            this role, I collaborate closely with the team to enhance digital
-            product design across mobile, websites, assets, and branding.
-          </p>
-        </div>
-        <a
-          href="https://drive.google.com/file/d/1ougaObKifoMgq7jmX9_k27H_t9VyQRMq/view?usp=drive_link"
-          target="_blank"
-          class="index-bio-btn txt-body"
-        >
-          Digital Résumé →
-        </a>
-      </div>
+
       <div id="work" class="work-wrapper">
         <img class="img-divider" src="img/index/line.svg" />
 
@@ -150,7 +141,7 @@
             <p class="txt-label">group platform</p>
           </div>
           <div class="work-title">
-            <h1 class="txt-display">heylo.co</h1>
+            <h1 class="txt-display-cap">heylo.co</h1>
           </div>
           <div class="work-arrow-role">
             <img src="img/index/line-arrow.svg" class="line-arrow" />
@@ -158,7 +149,7 @@
           </div>
           <div class="work-img img-hidden">
             <img
-              src="img/heylo/heylo_index.jpg"
+              src="img/heylo/heylo_index.svg"
               alt="Heylo mockup of login screen"
             />
           </div>
@@ -174,7 +165,7 @@
             <p class="txt-label">group streaming</p>
           </div>
           <div class="work-title">
-            <h1 class="txt-display">teleparty</h1>
+            <h1 class="txt-display-cap">teleparty</h1>
           </div>
           <div class="work-arrow-role">
             <img src="img/index/line-arrow.svg" class="line-arrow" />
@@ -188,7 +179,6 @@
           </div>
         </a>
         <!-- Teleparty -->
-
         <img class="img-divider" src="img/index/line.svg" />
 
         <!-- Hireclub -->
@@ -198,7 +188,7 @@
             <p class="txt-label">career coach</p>
           </div>
           <div class="work-title">
-            <h1 class="txt-display">hireclub</h1>
+            <h1 class="txt-display-cap">hireclub</h1>
           </div>
           <div class="work-arrow-role">
             <img src="img/index/line-arrow.svg" class="line-arrow" />
@@ -215,14 +205,14 @@
 
         <img class="img-divider" src="img/index/line.svg" />
 
-        <!-- Fireflies -->
+        <!-- Fireflies
         <a href="pages/fireflies.html" class="work-row img-hover">
           <div class="work-date-category">
             <p class="txt-label">oct. 2018</p>
             <p class="txt-label">ai transcriber</p>
           </div>
           <div class="work-title">
-            <h1 class="txt-display">fireflies.ai</h1>
+            <h1 class="txt-display-cap">fireflies.ai</h1>
           </div>
           <div class="work-arrow-role">
             <img src="img/index/line-arrow.svg" class="line-arrow" />
@@ -235,9 +225,9 @@
             />
           </div>
         </a>
-        <!-- Fireflies -->
-
+        
         <img class="img-divider" src="img/index/line.svg" />
+        Fireflies -->
       </div>
       <footer>
         <div class="footer-wrapper layout-grid">
